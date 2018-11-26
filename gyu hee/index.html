@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css Horizontal drop down menu bar</title>
+    <!--    css연결-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+<!--     폰트-->
+    <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" rel="stylesheet" href="./css/jquery.bxslider.min.css">
+<!--    슬라이더-->
+     <script src="js/jquery-3.1.1.min.js"></script>
+     <script src="js/jquery.bxslider.min.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" rel="stylesheet" href="./css/jquery.bxslider.min.css">
+<!--    구글폰트-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto+Slab" rel="stylesheet"> 
+    <script>
+        $(function() {
+            $(".bxslider").bxSlider({
+                
+                slidthWidth:600,
+                captions:true,
+                auto:true,                // 자동실행
+                autoControls:true,        // 재생 버튼 표시
+                stopAutoOnclick:true      // 클릭해서 자동실행 멈춤 지정
+                
+            });
+            
+        });
+    </script> 
+    <style>
+        body{
+            font-family: 'Nanum Gothic', sans-serif;
+            
+            margin: 0px;
+            padding: 50px;background-color:darkgrey
+        }
+          #wrapper {
+            padding-top: 100px;
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class='menu'>
+        <ul>
+            <li>
+                <a href-'#'>Home</a>
+            </li>
+            <li>
+               <a href-'#'>About Us</a>
+            </li>
+            <li class='active sub'>
+                <a href='#'>HOMEWORK</a>
+                
+                <ul>
+                    <li class='sud'>
+                        <a href='#'>HTML</a>
+                        <ul>
+                            <li>
+                                <a href='hw01.html'>hw1</a>
+                            </li>
+                            <li>
+                                <a href='hw02.html'>hw2</a>
+                            </li>
+                            <li>
+                                <a href='hw03.html'>hw3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='sub'>
+                        <a href='#'>CSS </a>
+                        <ul>
+                            <li>
+                                <a href='hw04.html'>hw4</a>
+                            </li>
+                            <li>
+                                <a href='hw05.html'>hw5</a>
+                            </li>
+                            <li>
+                                <a href='hw06.html'>hw6</a>
+                            </li>
+                            <li>
+                                <a href='contact.html'>hw7</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href='portfolio.html'>Portfolio</a>
+            </li>
+            <li class='last'>
+                <a href='contact.html'>'Contact</a>
+            </li>
+        </ul>
+    </div>
+     <div id="wrapper">
+           <div class="bxslider">
+            <div>
+              <img src="img/본체속_나쁜_세균맨들이_.jpg"  title="포토폴리오1">
+            </div>
+            <div>
+              <img src="img/2018-11-25 22;27;35.JPG"  title="포토폴리오2">
+            </div>
+            <div>
+              <img src="img/2018-11-25 22;33;52.JPG"  title="포토폴리오3">
+            </div>         
+        </div>
+    </div>
+    <!-- section 시작 -->
+    <section class="conB">
+       <div class="container">
+        <div class="text">
+            <span class="far fa-grin-beam icon" ></span>
+            <h2>과제</h2>
+            <p>한 학기동안 진행한 콘텐츠 프로그래밍 과제입니다. </p>
+            <a href="#">MORE... 
+            <span class="fa fa-chevron-right"></span>
+            </a>
+        </div>
+        <div class="text">
+            <span class="far fa-grin icon"></span>
+            <h2>직무능력1</h2>
+            <p> 중간 직무능력평가입니다.</p>
+            <a href="mid-term.html">MORE... 
+            <span class="fa fa-chevron-right"></span>
+            </a>
+        </div>
+        <div class="text">
+            <span class="far fa-grin-alt icon "> </span>
+            <h2>직무능력2</h2>
+            <p>기말 직무능력평가입니다. </p>
+            <a href="#">MORE... 
+            <span class="fa fa-chevron-right"></span>
+            </a>
+        </div>                
+      </div>
+    </section>
+    <!--   저작권-->
+    <footer>
+        <div id="footer">
+            <p>
+                copyright&copy <a href="index.html" class="site">gyu</a> All rights reserved.
+            </p>
+            <span>email:rlarbgmldla@naver.com</span>
+        </div>
+    </footer>
+</body>
+</html>

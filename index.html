@@ -2,21 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>직무수행능력평가1</title>
+    <title>css Horizontal drop down menu bar</title>
+    <!--    css연결-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+<!--     폰트-->
+    <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" rel="stylesheet" href="./css/jquery.bxslider.min.css">
+<!--    슬라이더-->
+     <script src="js/jquery-3.1.1.min.js"></script>
+     <script src="js/jquery.bxslider.min.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" rel="stylesheet" href="./css/jquery.bxslider.min.css">
+<!--    구글폰트-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto+Slab" rel="stylesheet"> 
+    <script>
+        $(function() {
+            $(".bxslider").bxSlider({
+                
+                slidthWidth:600,
+                captions:true,
+                auto:true,                // 자동실행
+                autoControls:true,        // 재생 버튼 표시
+                stopAutoOnclick:true      // 클릭해서 자동실행 멈춤 지정
+                
+            });
+            
+        });
+    </script> 
     <style>
-    *{
-        padding: 0;
-        margin: 0;
-    }
-    body {font-family: '맑은 고딕','Aapple SD Gothic neo',sans-serif;
-       }
-        
-    /*    헤더*/
-    header{
-        max-width: 1200px;
-    }
-    /*사이트이름    */
-    #headA #headA_h1 a{
+        body{
+            font-family: 'Nanum Gothic', sans-serif;
+            
+            margin: 0px;
+            padding: 50px;background-color:darkgrey
+        }
+          #wrapper {
+            padding-top: 100px;
+            width: 400px;
+            margin: 0 auto;
+        }
+         #headA #headA_h1 a{
         display: inline-block;
         line-height: 60px;
         padding-left: 20px;
@@ -37,196 +64,113 @@
         text-shadow: 
             5px 5px 8px #666666;
     }
-    #headA p{
-        margin: 0px;
-        display: inline-block;
-        padding-top:0px;
-        padding-left: 20px;
-        padding-right: 10px;
-        font-size: 12px;
-    }
-    #headA{
-        max-width: 1000px;
-        float: left;
-    }
-    #headC{
-        float: right;
-        margin-right: 20px;
-        color: #ffffff;
-        padding-bottom: 16px;
-    }
-    /*   메인메뉴 */
-    #main_menu ul{
-        margin:0;
-        padding: 0px;
-        margin-top: 10px;
-    }
-    #main_menu li {
-        list-style-type: none;
-        display: inline-block;
-        padding:0px 0px 5px 0px;
-        margin-top: 18px;
-    }
-    #main_menu li a{
-        text-decoration: none;
-        color:palevioletred;
-        padding: 20px 5px;
-        margin-top: 10px;
-    }
-    .conB{
-        margin-bottom: 10px;
-    }
-    /*  사이트링크 주소 처리  */
-    .site{
-        text-decoration: none;
-        color: palevioletred;
-        font-weight: bold;
-    }
-    .site:hover{
-        text-decoration: underline;
-    }
-    /*   저작권     */
-    #footer{
-        border-top: 1px solid #dddddd;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    #footer p{
-        font-size: 14px;
-        color: #666666;
-        font-weight: normal;
-        margin-left: 14px;
-    }
-    #footer span{
-        font-size: 12px;
-        font-weight: normal;
-        margin-left: 14px;
-    }
-    /*  float 해제  */
-    .clear{
-        clear
-            clear: both;  
-    }
-        .text p{
-            padding-top: 100px;
-        }
-    /*   본문내용배치  */
-    #wrapper{
-        max-width: 800px;
-        margin:0 auto;
-    }
-       
-    /*     profile css   */
-        h1{
-            color: peachpuff;
-            font-family: "Arial";
-            font-size:60px;
-            text-align: center;
-            text-shadow: 5px 5px 8px #666666;
-            margin:20px;
-        }
-        h2{
-            color: brown;
-            font-size: 30px;
-            text-decoration: underline;
-        }
-        h3{
-            font-size:20px;
-            font-style: italic;
-        }
-        p{
-            color: #444444;
-            font-family: "돋움";
-            font-size: 14px;
-            line-height: 150%;
-        }
-        logo{
-            text-align: center;
-            margin: 30px;
-        }
-        #img_main {
-            border-radius: :100%;
-            text-align: center;
-    /*         border-radius:2rem;   */
-        }
-        #main{
-            text-align: center;
-            margin:10px;
-        }
-        #content{
-            border: 2px dotted pink;
-            padding: 20px;
-            margin-bottom: 30px;
-            background-color: #eeeeee;
-            margin:20px;
-        }
-        #content p{
-            font-size:14px;
-        }
-        #content span{
-            font-size: 12px;
-            font-weight: normal;
-            margin-left: 18px;
-        }
     </style>
 </head>
 <body>
-<!--    헤더-->
    <header>
-       <div id="headA">
-           <h1 id="headA_h1"><a href="indexx.html" class="site">gyuhee</a></h1>
-           <p>콘텐츠 프로그래밍</p>
+   <div id="headA">
+           <h1 id="headA_h1"><a href="index.html" class="site">gyuhee</a></h1>
+
        </div>
-       <div id="headB">
-           
-       </div>
-       <div id="headC">
-       <ul id="main_menu">
-           <li><a href="profile.html">profile</a></li>
-            <li><a href="hw01.html">hw01</a></li>
-             <li><a href="hw02.html">hw02</a></li>
-              <li><a href="hw03.html">hw03</a></li>
-               <li><a href="hw04.html">hw04</a></li>
-                <li><a href="hw05.html">hw05</a></li>
-                 <li><a href="portfolio.html">portfolio</a></li>
-       </ul>
-       </div>
-   </header>
-    <!--  float 해제  -->
-    <div class="clear"></div>
-    
-    <div id="wrapper">
-    <!--        본문제목-->
-    <section class="conB">
-        <div class="container">
-            <div class="text">
-                <p> 본인소개</p>
-                <span>디지털미디어디자인과</span>
-            </div>
-        </div>
-    </section>
+    <div class='menu'>
+        <ul>
+          <li class='last'>
+                <a href='index.html'>'HOME'</a>
+            </li>
+            <li>
+                <li class='last'>
+                <a href='profile.html'>'ABOUT US'</a>
+               
+            </li>
+            <li class='active sub'>
+                <a href='#'>HOMEWORK</a>
+                
+                <ul>
+                    <li class='sud'>
+                        <a href='#'>HTML</a>
+                        <ul>
+                            <li>
+                                <a href='hw01.html'>hw1</a>
+                            </li>
+                            <li>
+                                <a href='hw02.html'>hw2</a>
+                            </li>
+                            <li>
+                                <a href='hw03.html'>hw3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='sub'>
+                        <a href='#'>CSS </a>
+                        <ul>
+                            <li>
+                                <a href='hw04.html'>hw4</a>
+                            </li>
+                            <li>
+                                <a href='hw05.html'>hw5</a>
+                            </li>
+                            <li>
+                                <a href='hw06.html'>hw6</a>
+                            </li>
+                            <li>
+                                <a href='contact.html'>hw7</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href='portfolio.html'>Portfolio</a>
+            </li>
+            <li class='last'>
+                <a href='contact.html'>'Contact</a>
+            </li>
+        </ul>
     </div>
-<!--    본문내용시작-->
-    <section class="conC">
-        <article>
-            <h1>contents programing</h1>
-            <div id="img_main">
-                <img id="img_main" src="./img/my_photo.jpg"width="200">
+    </header>
+     <div id="wrapper">
+           <div class="bxslider">
+            <div>
+              <img src="img/bb.jpg"  title="포토폴리오1">
             </div>
-            <div id="main">
-                <h2>디지털미디어디자인과</h2>
-                <h3>1학년 b반 김규희</h3>
+            <div>
+              <img src="img/hh.jpg"  title="포토폴리오2">
             </div>
-            <div id="content">
-                <p>안녕하세요 저는 수원에 살고 있는 김규희입니다</p>
-                <p>저의 장점은 건강</p>
-                 <p>저는 망고포도를 좋아합니다</p>
-                 <p>저는 중립적인 성격 결단력</p>
-            </div>
-        </article>
+            <div>
+              <img src="img/se.jpg" title="포토폴리오3">
+            </div>         
+        </div>
+    </div>
+    <!-- section 시작 -->
+    <section class="conB">
+       <div class="container">
+        <div class="text">
+            <span class="far fa-grin-beam icon" ></span>
+            <h2>과제</h2>
+            <p>한 학기동안 진행한 콘텐츠 프로그래밍 과제입니다. </p>
+            <a href="contact.html">MORE... 
+            <span class="fa fa-chevron-right"></span>
+            </a>
+        </div>
+        <div class="text">
+            <span class="far fa-grin icon"></span>
+            <h2>직무능력1</h2>
+            <p> 중간 직무능력평가입니다.</p>
+            <a href="mid-term.html">MORE... 
+            <span class="fa fa-chevron-right"></span>
+            </a>
+        </div>
+        <div class="text">
+            <span class="far fa-grin-alt icon "> </span>
+            <h2>직무능력2</h2>
+            <p>기말 직무능력평가입니다. </p>
+            <a href="final-term.html">MORE... 
+            <span class="fa fa-chevron-right"></span>
+            </a>
+        </div>                
+      </div>
     </section>
-    <!--    본문내용 끝-->
-<!--        저작권-->
+    <!--   저작권-->
     <footer>
         <div id="footer">
             <p>
